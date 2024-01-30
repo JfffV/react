@@ -1,0 +1,47 @@
+
+  .games_container{
+    display: flex;
+    padding-top: 85px;
+    justify-content: space-around;
+    
+  }
+  .border{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+   
+  }
+
+  .title_game{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+    border-bottom: 1px solid;
+    border-color: black;
+    margin: 0;
+    
+  }
+  .border_inside{
+    display: flex;
+    flex-direction: column;
+   
+    
+  }
+  .game_name{
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: antiquewhite;
+    
+  }
+  .for_games{
+    
+    display: flex;
+    flex-direction: row;
+    background-color: #337ab7;;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
