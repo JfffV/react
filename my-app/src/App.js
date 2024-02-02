@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="main">
       <Header games={games} setGames={setGames} />
-      <Body games={games} />
+      <Body games={games}  setGames={setGames} />
     </div>
   );
 }

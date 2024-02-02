@@ -16,13 +16,13 @@ function Column(props) {
         <div className="for_games">
           {props.title === 'inprogress' || props.title === 'done' ?(  
             
-          <Button onClick={()=>{props.moveGame(props.title, 'left')}} variant="primary">
+          <Button onClick={()=>{props.moveGame(props.title, 'left', game.name)}} variant="primary">
             <i class="bi bi-arrow-left"></i>
           </Button> ) : null}
           <p className="game_name"> {game.name} </p>
           
           {props.title === 'todo' || props.title === 'inprogress'  ?(
-          <Button onClick={()=>{props.moveGame(props.title, 'right')}} variant="primary">
+          <Button onClick={()=>{props.moveGame(props.title, 'right', game.name)}} variant="primary">
             <i class="bi bi-arrow-right"></i>
           </Button>) : null}
           
