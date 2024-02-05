@@ -1,6 +1,5 @@
 import { Button } from "react-bootstrap";
 import { useEffect } from "react";
-import { useState } from "react";
 import Column from "./column.js";
 import "./body.css";
 
@@ -21,7 +20,7 @@ function Body(props) {
     games[keyToAdd].push({ name: name });
     props.setGames(games);
   };
-  const deletGame = (title, name) => {
+  const deleteGame = (title, name) => {
     const games = JSON.parse(JSON.stringify(props.games));
     games[title] = games[title].filter((game) => game.name !== name);
     props.setGames(games);
@@ -32,19 +31,19 @@ function Body(props) {
         games={props.games.todo}
         title="todo"
         moveGame={moveGame}
-        deletGame={deletGame}
+        deleteGame={deleteGame}
       />
       <Column
         games={props.games.inprogress}
         title="inprogress"
         moveGame={moveGame}
-        deletGame={deletGame}
+        deleteGame={deleteGame}
       />
       <Column
         games={props.games.done}
         title="done"
         moveGame={moveGame}
-        deletGame={deletGame}
+        deleteGame={deleteGame}
       />
     </div>
   );
